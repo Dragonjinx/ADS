@@ -19,20 +19,33 @@ $$\Theta(n) = n^6$$
 \section{$T(n) = 5T(n/3) + 17n^{1.2}$}
 
 $n^{log_{b}(a)} \approx n^{1.5}$ (Rounded up for worst case)\\\\ 
-$n^{1.2}$ is polynomially smaller than $n^{1.5}$
+$n^{1.2}$ is polynomially smaller than $n^{1.5}$\\\\
 Therefore:\\\\
 $$\Theta(n) = n^{1.5}$$
 
 
 \section{$T(n) = 12T(n/2) + n^2 \cdot log_{2}(n)$}
-The effect on $n$
-
-First recursion: $n^2 \cdot log_{2}(n)$
-Second Recursion: $12(n^2 \cdot log_{2}(n))$
+The effect of $log_{2}(n)$ on $n^2$ can be neglected.\\\\
+Thus\\\\
+$f(n) = n^2$\\\\
+$n^{log_{b}(a)} \approx n^3.6$ (Rounded up for worst case)\\\\
+$n^{2}$ is polynomially smaller than $n^{3.6}$\\\\
+Therefore:\\\\
+$$\Theta(n) = n^{3.6}$$\\\\
 
 \section{$T(n) = 3T(n/5) + T(n/2) + 2^n$}
+We use recursion tree method for this recursive definition.\\\\
+Initial: $2^n$\\\\
+First Iteration: $3(2^{n/5}) + 2^{n/2}$\\\\
+Second Iteration: $4(3 \cdot 2^{n/25}) + 6(2^{n/10}) + 2^{n/4}$\\\\
+Third Iteration: $4^2(3 \cdot 2^{n/125}) + 6(4 \cdot 2^{n/50}) + 4(2^{n/20}) + 2^{n/8}$
+We can see that after each iteration, the expressions get closer to a constant value.($2^n \rightarrow 1$ as $n\rightarrow 0$)
+Therefore:\\\\
+$$\Theta(n) = 2^{n}$$\\\\
 
 \section{$T(n) = T(2n/5) + T(3n/5) + \Theta(n)$}
-
+We can try to find the bounds of the equation.\\\\
+Lower bound is when $\Theta(n) > n^{log_{5/2}(3)} $ because we take $T(3n/5) \approx T(2n/5)$\\\\
+Upper bound is when $\Theta(n) < n^{log_{5/3}(3)} $ because we take $T(3n/5) \approx T(2n/5)$\\\\
 
 \end{document}
