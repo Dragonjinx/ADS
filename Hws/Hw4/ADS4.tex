@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{ADS4}
+\author{abhilekh1 }
+\date{March 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{$T(n) = 36T(n/6) + 2n$}
+Here,\\\\
+$n^{log_{b}(a)} = n^6$\\\\
+$2n$ is polynomially smaller than $n^6$\\\\
+Therefore:\\\\
+$$\Theta(n) = n^6$$
+
+\section{$T(n) = 5T(n/3) + 17n^{1.2}$}
+
+$n^{log_{b}(a)} \approx n^{1.5}$ (Rounded up for worst case)\\\\ 
+$n^{1.2}$ is polynomially smaller than $n^{1.5}$
+Therefore:\\\\
+$$\Theta(n) = n^{1.5}$$
+
+
+\section{$T(n) = 12T(n/2) + n^2 \cdot log_{2}(n)$}
+The effect on $n$
+
+First recursion: $n^2 \cdot log_{2}(n)$
+Second Recursion: $12(n^2 \cdot log_{2}(n))$
+
+\section{$T(n) = 3T(n/5) + T(n/2) + 2^n$}
+
+\section{$T(n) = T(2n/5) + T(3n/5) + \Theta(n)$}
+
+
+\end{document}
