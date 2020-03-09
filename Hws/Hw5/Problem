@@ -1,0 +1,4 @@
+A binary multiplication can be broken down to two loops.
+One is the normal multiplication loop.
+The other is a loop multiplying with each digit.
+Thus the time complexity is n^2

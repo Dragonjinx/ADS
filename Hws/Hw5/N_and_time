@@ -1,0 +1,64 @@
+Closed form computations: 
+1   0.024325 miliseconds
+2   0.01225 miliseconds
+3   0.04935 miliseconds
+5   0.000867 miliseconds
+7   0.000818 miliseconds
+10   0.000703 miliseconds
+15   0.000853 miliseconds
+20   0.000761 miliseconds
+27   0.000672 miliseconds
+34   0.000701 miliseconds
+41   0.000665 miliseconds
+47   0.000736 miliseconds
+61   0.000647 miliseconds
+76   0.000706 miliseconds
+91   0.000834 miliseconds
+
+Matrix Method computations: 
+1   0.000674 miliseconds
+2   0.000294 miliseconds
+3   0.000625 miliseconds
+5   0.001702 miliseconds
+7   0.001304 miliseconds
+10   0.001541 miliseconds
+15   0.002532 miliseconds
+20   0.002314 miliseconds
+27   0.004003 miliseconds
+34   0.003745 miliseconds
+41   0.004572 miliseconds
+47   0.004754 miliseconds
+61   0.008222 miliseconds
+76   0.007926 miliseconds
+91   0.008839 miliseconds
+
+Bottom up computations: 
+1   0.000864 miliseconds
+2   0.000583 miliseconds
+3   0.000904 miliseconds
+5   0.000679 miliseconds
+7   0.000784 miliseconds
+10   0.000589 miliseconds
+15   0.000616 miliseconds
+20   0.000578 miliseconds
+27   0.000636 miliseconds
+34   0.000583 miliseconds
+41   0.00062 miliseconds
+47   0.000654 miliseconds
+61   0.000611 miliseconds
+76   0.000203 miliseconds
+91   0.000237 miliseconds
+
+Naive computations: 
+1   0.000162 miliseconds
+2   9.6e-05 miliseconds
+3   9.2e-05 miliseconds
+5   0.000275 miliseconds
+7   0.000389 miliseconds
+10   0.00117 miliseconds
+15   0.008173 miliseconds
+20   0.081383 miliseconds
+27   2.00286 miliseconds
+34   47.9929 miliseconds
+41   1290.61 miliseconds
+
